@@ -1,0 +1,64 @@
+// Logo Mixin
+@mixin brand-logo($height: 115px, $width: 115px) {
+  background: {
+    image: image-url("brand/logo.png");
+    repeat: no-repeat;
+    color: $brand-color;
+    position: center;
+    size: 80%;
+  };
+  height: $height;
+  width: $width;
+  @include hide-text();
+}
+
+// Action Bar Elements
+%action-bar-elements {
+  padding: 12px 20px;
+  @include inline-block(middle)
+}
+
+// Header Module elements
+.site-header {
+  position: relative;
+  .logo {
+    position: absolute;
+    left: 20px;
+    @include brand-logo;
+  }
+  .action-bar {
+    border-bottom: 1px solid lighten($content-color, 50%);
+    text-align: right;
+    &__wrap {
+      @include container($xl-screens);
+      padding-left: $logo-placement;
+      padding-right: 20px;
+    }
+    .banner-element {
+      background: $important-mark-color;
+      @extend %action-bar-elements;
+    }
+    .user-account {
+      @extend %action-bar-elements;
+    }
+    .shopping-bag {
+      @extend %action-bar-elements;
+    }
+  }
+
+  .nav-actions {
+    padding-left: $logo-placement;
+    padding-right: 20px;
+    @include clearfix;
+    @include container($xl-screens);
+    .nav {
+      float: left;
+      @include inline-nav(30px);
+    }
+    .search {
+      padding-top: 20px;
+      float: right;
+      @include inline-search;
+    }
+  }
+}

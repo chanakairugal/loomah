@@ -1,0 +1,26 @@
+// Inline nav bar
+
+@mixin inline-nav ($padding) {
+  .nav-list {
+    @include reset-box-model;
+    @include reset-list-style;
+    &__item {
+      @include inline-block(middle);
+      a {
+        color: $nav-link-color;
+        padding: $padding;
+        display: block;
+      }
+    }
+  }
+}
+
+
+// Inline search module
+@mixin inline-search {
+  input[type="text"] {
+    padding: 10px 25px;
+    border: 1px solid lighten($content-color, 40%);
+    @include border-radius(80px);
+  }
+}

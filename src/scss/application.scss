@@ -1,0 +1,18 @@
+@import 'compass';
+@import 'susy';
+
+// Variables
+@import "variables";
+
+
+// List of manifest files
+// File structure follows architecture called SMACSS
+// -----------------------------------------------------
+// 01. base
+@import "base/manifest";
+// 02. layout
+@import "layout/manifest";
+// 03. modules
+@import "modules/manifest";
+// 04. state
+@import "state/manifest";

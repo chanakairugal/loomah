@@ -1,0 +1,14 @@
+
+body {
+  font:{
+    family: $primary-font-family;
+    size: $base-font-size;
+    color: $content-color;
+    weight: $normal;
+  };
+}
+.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $secondary-font-family; font-weight: $heading-normal; }
+
+a {
+  text-decoration: none;
+}
