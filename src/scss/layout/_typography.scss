@@ -6,8 +6,20 @@ body {
     color: $content-color;
     weight: $normal;
   };
+  line-height: $base-line-height;
+  color: $content-color;
 }
-.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $secondary-font-family; font-weight: $heading-normal; }
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $secondary-font-family; font-weight: $heading-normal; color: darken($content-color, 30%) }
+h1 {
+  @include adjust-font-size-to(35px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  @include padding-leader();
+}
 
 a {
   text-decoration: none;

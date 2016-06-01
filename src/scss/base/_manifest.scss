@@ -1,1 +1,7 @@
 @import "compass/reset";
+input {
+  &:focus, &:active {
+    border: none;
+    outline: none;
+  }
+}

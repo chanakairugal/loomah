@@ -1,0 +1,9 @@
+@mixin hero-headings($margin-v: 25px, $width: 45%) {
+  width: $width;
+  margin: {
+    top: $margin-v;
+    bottom: $margin-v;
+    left: auto;
+    right: auto;
+  };
+}

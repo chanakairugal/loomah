@@ -1,0 +1,6 @@
+.lookbook-container {
+  .hero-heading {
+    @include hero-headings(35px);
+    text-align: center;
+  }
+}
