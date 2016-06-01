@@ -12,7 +12,9 @@
 @import "base/manifest";
 // 02. layout
 @import "layout/manifest";
-// 03. modules
+// 03. utilities
+@import "utilities/manifest";
+// 04. modules
 @import "modules/manifest";
-// 04. state
+// 05. state
 @import "state/manifest";

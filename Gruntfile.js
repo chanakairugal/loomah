@@ -36,7 +36,6 @@ module.exports = function(grunt) {
                 files: ['src/scss/**/*.scss'],
                 tasks: ['compass:dev']
             }
-
         }
     });
 

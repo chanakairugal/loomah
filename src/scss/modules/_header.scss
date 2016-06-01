@@ -21,6 +21,8 @@
 // Header Module elements
 .site-header {
   position: relative;
+  @include box-shadow(0 0 20px rgba($black, 0.3));
+
   .logo {
     position: absolute;
     left: 20px;
@@ -53,7 +55,7 @@
     @include container($xl-screens);
     .nav {
       float: left;
-      @include inline-nav(30px);
+      @include inline-nav(30px, 20px, $primary-action);
     }
     .search {
       padding-top: 20px;

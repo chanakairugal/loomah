@@ -1,16 +1,38 @@
 // Inline nav bar
 
-@mixin inline-nav ($padding) {
+@mixin inline-nav ($padding-v, $padding-h, $active-color) {
   .nav-list {
     @include reset-box-model;
     @include reset-list-style;
     &__item {
       @include inline-block(middle);
       a {
+        position: relative;
         color: $nav-link-color;
-        padding: $padding;
+        padding: $padding-v $padding-h;
         display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include transition(all 0.4s);
 
+        &:after {
+          @include pseudoelem(absolute);
+          left: 40%;
+          right: 40%;
+          height: 1px;
+          bottom: $padding-v - 4px;
+          @include transition(all 0.6s);
+        }
+      }
+      &:hover, &--active {
+        a {
+          color: $active-color;
+          &:after {
+            left: $padding-h;
+            right: $padding-h;
+            background-color: $active-color;
+          }
+        }
       }
     }
   }

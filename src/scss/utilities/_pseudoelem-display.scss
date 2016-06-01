@@ -1,0 +1,9 @@
+@mixin pseudoelem($postion, $content:null){
+  position: $postion;
+
+  @if $content==null {
+    content: "";
+  } @else {
+    content: $content;
+  }
+}
