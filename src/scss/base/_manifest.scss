@@ -1,4 +1,8 @@
 @import "compass/reset";
+* {
+  font-family: $primary-font-family;
+  @include box-sizing()
+}
 input {
   &:focus, &:active {
     border: none;

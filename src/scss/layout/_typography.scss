@@ -25,3 +25,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+// Title Specific Classes
+@mixin section-title-mix {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: lighten($content-color, 10%);
+  @include adjust-font-size-to(12px);
+}

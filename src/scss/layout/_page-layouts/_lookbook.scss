@@ -3,4 +3,21 @@
     @include hero-headings(35px);
     text-align: center;
   }
+
+  .lookbook__item {
+    @include product-info-item;
+    margin-top: 45px;
+    &:first-child {
+      margin-top: 30px ;
+    }
+    &__details {
+      padding-top: 20px;
+
+      .title {
+        margin: 15px 0;
+        @include section-title-mix;
+        @include behind-line();
+      }
+    }
+  }
 }

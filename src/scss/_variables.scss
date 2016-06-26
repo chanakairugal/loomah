@@ -16,9 +16,11 @@ $brand-color: #1d2453;
 $content-color: #868686;
 $important-mark-color: #f8fa42;
 
+$neutral-action: #eee;
 $primary-action: #0c42ff;
 
 // Breakpoints
+$sm-screens: 24.063em;
 $md-screens: 40.063em;
 $lg-screens: 64.063em;
 $xl-screens: 90.063em;
@@ -27,8 +29,11 @@ $xl-screens: 90.063em;
 // Module Assets
 // Nav Bar
 $nav-link-color: #222;
-$logo-placement: 160px;
+$logo-placement: 110px;
+
+$product-info-width: 1000px;
 
 
-
-
+// Available Color Module
+$color-node-width: 70px;
+$size-node-width: 34px;

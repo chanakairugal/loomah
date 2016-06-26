@@ -1,0 +1,65 @@
+// Available Colors
+
+@mixin available-colors-mix {
+  ul {
+    @include reset-box-model;
+    @include reset-list-style;
+    .color-node {
+      @include inline-block(middle);
+      position: relative;
+      width: $color-node-width;
+      padding-right: 8px;
+      padding-bottom: 10px;
+      &:before {
+        @include border-radius(10px);
+        @include pseudoelem(absolute);
+        background: $neutral-action;
+        width: 80%;
+        height: 7px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+.available-colors {
+  @include available-colors-mix
+}
+
+// Available Sizes
+@mixin available-size-mix {
+  ul {
+    @include reset-box-model;
+    @include reset-list-style;
+    .size-node {
+      @include inline-block(middle);
+      position: relative;
+      width: $size-node-width;
+      height: $size-node-width;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: $size-node-width;
+      color: darken($content-color, 100%);
+      @include border-radius(50%);
+      &:before {
+        @include border-radius(50%);
+        @include pseudoelem(absolute);
+        border: 1px solid $neutral-action;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+
+
+.available-size {
+  @include available-size-mix;
+}

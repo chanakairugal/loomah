@@ -1,0 +1,47 @@
+@mixin btn-mix($type: fill, $theme: $neutral-action) {
+  font: {
+    family: $secondary-font-family;
+  };
+  outline: none;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  @include border-radius(30px);
+  @include transition(all 0.2s);
+
+  @if $type == border {
+    background: none;
+    color: $theme;
+    border: 1px solid $theme;
+
+    &:before {
+      @include pseudoelem(absolute);
+      background: $theme;
+      left: 48%;
+      top: 0;
+      right: 48%;
+      bottom: 0;
+      z-index: -1;
+      @include opacity(0);
+      @include transition(all 0.3s ease-in, opacity 0.4s ease-out);
+    }
+
+    &:hover {
+      color: contrast-color($theme);
+      &:before {
+        @include opacity(1);
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  @else {
+    background: $theme;
+    border: none;
+    color: contrast-color($theme);
+  }
+}
