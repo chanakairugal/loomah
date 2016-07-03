@@ -19,22 +19,28 @@
 }
 
 // Header Module elements
+.main-header {
+  &__wrap {
+    @include container($xl-screens);
+    position: relative;
+    padding: 0 20px;
+  }
+}
 .site-header {
   position: relative;
   @include box-shadow(0 0 20px rgba($black, 0.3));
 
   .logo {
     position: absolute;
-    left: 20px;
     @include brand-logo;
   }
   .action-bar {
     border-bottom: 1px solid lighten($nav-link-color, 75%);
     text-align: right;
     &__wrap {
-      @include container($xl-screens);
-      padding-left: $logo-placement;
-      padding-right: 20px;
+      //@include container($xl-screens);
+      //padding-left: $logo-placement;
+      //padding-right: 20px;
     }
     .banner-element {
       background: $important-mark-color;
@@ -49,7 +55,7 @@
   }
 
   .nav-actions {
-    padding-left: $logo-placement;
+    padding-left: $logo-placement + 40px;
     padding-right: 20px;
     @include clearfix;
     @include container($xl-screens);

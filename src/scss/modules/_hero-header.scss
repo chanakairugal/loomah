@@ -1,0 +1,35 @@
+@mixin hero-header {
+  background: {
+    color: #eee;
+  };
+  padding: 100px 0;
+  text-align: center;
+
+  .wrap {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font: {
+      family: $secondary-font-family;
+    };
+    small {
+      font: {
+        size: 40%;
+      };
+      display: block;
+      line-height: 80%;
+    }
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    @include btn-mix(fill, $primary-action);
+    margin-top: 20px;
+  }
+}
+
+.hero-header {
+  @include hero-header;
+}

@@ -1,4 +1,5 @@
 .lookbook-container {
+  padding-bottom: 45px;
   .hero-heading {
     @include hero-headings(35px);
     text-align: center;
@@ -6,9 +7,18 @@
 
   .lookbook__item {
     @include product-info-item;
-    margin-top: 45px;
+    margin-top: 60px;
     &:first-child {
-      margin-top: 30px ;
+      margin-top: 30px;
+    }
+    &:nth-child(even){
+      .lookbook__item__image {
+        order: 2;
+      }
+      .lookbook__item__details {
+        padding-left: 0;
+        padding-right: 30px;
+      }
     }
     &__details {
       padding-top: 20px;
