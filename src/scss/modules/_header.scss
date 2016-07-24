@@ -10,6 +10,15 @@
   height: $height;
   width: $width;
   @include hide-text();
+
+  @include mobile-to-tablet {
+    background: {
+      image: image-url("brand/logo-mobile.png");
+      repeat: no-repeat;
+    };
+    height: 80px;
+    width: 80px;
+  }
 }
 
 // Action Bar Elements

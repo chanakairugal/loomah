@@ -6,4 +6,9 @@
     left: auto;
     right: auto;
   };
+
+  @include mobile-to-tablet {
+    width: 100%;
+    padding: 0 35px;
+  }
 }

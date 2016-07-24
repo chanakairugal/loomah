@@ -14,10 +14,13 @@
     &:nth-child(even){
       .lookbook__item__image {
         order: 2;
+        @include mobile-to-tablet {
+          order: 0;
+        }
       }
       .lookbook__item__details {
-        padding-left: 0;
-        padding-right: 30px;
+        margin-left: 0;
+        margin-right: 30px;
       }
     }
     &__details {

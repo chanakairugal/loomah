@@ -28,6 +28,13 @@
     @include btn-mix(fill, $primary-action);
     margin-top: 20px;
   }
+
+  @include mobile-to-tablet {
+    padding: {
+      left: 35px;
+      right: 35px;
+    };
+  }
 }
 
 .hero-header {

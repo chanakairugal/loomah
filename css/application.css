@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,69 +20,64 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 2, ../src/scss/layout/_typography.scss */
-body {
+/* line 2, ../src/scss/base/_manifest.scss */
+* {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-color: #666;
-  font-weight: 400;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 10, ../src/scss/layout/_typography.scss */
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+/* line 7, ../src/scss/base/_manifest.scss */
+input:focus, input:active {
+  border: none;
+  outline: none;
 }
 
-/* line 12, ../src/scss/layout/_typography.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 16, ../src/scss/modules/_header.scss */
+/* line 25, ../src/scss/modules/_header.scss */
 .site-header .action-bar .banner-element, .site-header .action-bar .user-account, .site-header .action-bar .shopping-bag {
   padding: 12px 20px;
   display: inline-block;
@@ -92,66 +87,78 @@ a {
   *display: inline;
 }
 
-/* line 22, ../src/scss/modules/_header.scss */
+/* line 32, ../src/scss/modules/_header.scss */
+.main-header__wrap {
+  max-width: 95em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 20px;
+}
+/* line 12, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.main-header__wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 38, ../src/scss/modules/_header.scss */
 .site-header {
   position: relative;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-/* line 24, ../src/scss/modules/_header.scss */
+/* line 42, ../src/scss/modules/_header.scss */
 .site-header .logo {
   position: absolute;
-  left: 20px;
-  background-image: url('../images/brand/logo.png?1463918863');
+  background-image: url('../images/brand/logo.png?1466838608');
   background-repeat: no-repeat;
   background-color: #1d2453;
   background-position: center;
   background-size: 80%;
-  height: 115px;
-  width: 115px;
+  height: 110px;
+  width: 110px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
 }
-/* line 29, ../src/scss/modules/_header.scss */
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 42, ../src/scss/modules/_header.scss */
+  .site-header .logo {
+    background-image: url('../images/brand/logo-mobile.png?1468937265');
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 46, ../src/scss/modules/_header.scss */
 .site-header .action-bar {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e1e1e1;
   text-align: right;
 }
-/* line 32, ../src/scss/modules/_header.scss */
-.site-header .action-bar__wrap {
-  max-width: 90.063em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 160px;
-  padding-right: 20px;
-}
-/* line 12, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.site-header .action-bar__wrap:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-/* line 37, ../src/scss/modules/_header.scss */
+/* line 54, ../src/scss/modules/_header.scss */
 .site-header .action-bar .banner-element {
   background: #f8fa42;
 }
-/* line 49, ../src/scss/modules/_header.scss */
+/* line 66, ../src/scss/modules/_header.scss */
 .site-header .nav-actions {
-  padding-left: 160px;
+  padding-left: 150px;
   padding-right: 20px;
   overflow: hidden;
   *zoom: 1;
-  max-width: 90.063em;
+  max-width: 95em;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .site-header .nav-actions:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 54, ../src/scss/modules/_header.scss */
+/* line 71, ../src/scss/modules/_header.scss */
 .site-header .nav-actions .nav {
   float: left;
 }
@@ -172,22 +179,427 @@ a {
 }
 /* line 9, ../src/scss/modules/_nav-bar.scss */
 .site-header .nav-actions .nav .nav-list__item a {
-  color: #666;
-  padding: 30px;
+  position: relative;
+  color: #222;
+  padding: 20px 20px;
   display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
-/* line 58, ../src/scss/modules/_header.scss */
+/* line 18, ../src/scss/modules/_nav-bar.scss */
+.site-header .nav-actions .nav .nav-list__item a:after {
+  position: absolute;
+  content: "";
+  left: 40%;
+  right: 40%;
+  height: 1px;
+  bottom: 16px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 28, ../src/scss/modules/_nav-bar.scss */
+.site-header .nav-actions .nav .nav-list__item:hover a, .site-header .nav-actions .nav .nav-list__item--active a {
+  color: #0c42ff;
+}
+/* line 30, ../src/scss/modules/_nav-bar.scss */
+.site-header .nav-actions .nav .nav-list__item:hover a:after, .site-header .nav-actions .nav .nav-list__item--active a:after {
+  left: 20px;
+  right: 20px;
+  background-color: #0c42ff;
+}
+@media (min-width: 40.063em) and (max-width: 64.063em) {
+  /* line 71, ../src/scss/modules/_header.scss */
+  .site-header .nav-actions .nav {
+    display: none;
+  }
+}
+/* line 79, ../src/scss/modules/_header.scss */
 .site-header .nav-actions .search {
-  padding-top: 20px;
+  padding-top: 12px;
   float: right;
 }
-/* line 21, ../src/scss/modules/_nav-bar.scss */
+/* line 44, ../src/scss/modules/_nav-bar.scss */
 .site-header .nav-actions .search input[type="text"] {
   padding: 10px 25px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ececec;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
+}
+
+/* line 40, ../src/scss/modules/_hero-header.scss */
+.hero-header {
+  background-color: #eee;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 8, ../src/scss/modules/_hero-header.scss */
+.hero-header .wrap {
+  max-width: 650px;
+  margin: 0 auto;
+}
+/* line 13, ../src/scss/modules/_hero-header.scss */
+.hero-header h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+/* line 17, ../src/scss/modules/_hero-header.scss */
+.hero-header h1 small {
+  font-size: 40%;
+  display: block;
+  line-height: 80%;
+}
+/* line 27, ../src/scss/modules/_hero-header.scss */
+.hero-header .btn {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #0c42ff;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 40, ../src/scss/modules/_hero-header.scss */
+  .hero-header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+/* line 4, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-colors ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+/* line 7, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-colors ul .color-node {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  width: 70px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+}
+/* line 13, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-colors ul .color-node:before {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  background: #eee;
+  width: 80%;
+  height: 7px;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 33, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-size ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+/* line 36, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-size ul .size-node {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 34px;
+  color: black;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 47, ../src/scss/modules/_lookbook-modules/_available-colors_and_size.scss */
+.available-size ul .size-node:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  border: 1px solid #eee;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* line 2, ../src/scss/layout/_typography.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-color: #868686;
+  font-weight: 400;
+  line-height: 22px;
+  color: #868686;
+}
+
+/* line 12, ../src/scss/layout/_typography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+/* line 14, ../src/scss/layout/_typography.scss */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.25714em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 20, ../src/scss/layout/_typography.scss */
+p {
+  padding-top: 1.57143em;
+}
+
+/* line 24, ../src/scss/layout/_typography.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 1, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container {
+  padding-bottom: 45px;
+}
+/* line 3, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .hero-heading {
+  width: 55%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 3, ../src/scss/layout/_page-layouts/_lookbook.scss */
+  .lookbook-container .hero-heading {
+    width: 100%;
+    padding: 0 35px;
+  }
+}
+/* line 8, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item {
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  margin-top: 60px;
+}
+/* line 5, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.lookbook-container .lookbook__item__image {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 2 55%;
+  flex: 2 55%;
+}
+/* line 7, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.lookbook-container .lookbook__item__image img {
+  max-width: 100%;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 5, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .lookbook-container .lookbook__item__image {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex: 100%;
+    flex: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* line 19, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.lookbook-container .lookbook__item__details {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 2 45%;
+  flex: 2 45%;
+  margin-left: 30px;
+}
+/* line 22, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.lookbook-container .lookbook__item__details h2 {
+  font-size: 1.78571em;
+  line-height: 1.056em;
+}
+/* line 25, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.lookbook-container .lookbook__item__details .btn {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: none;
+  color: #0c42ff;
+  border: 1px solid #0c42ff;
+}
+/* line 21, ../src/scss/utilities/_buttons.scss */
+.lookbook-container .lookbook__item__details .btn:before {
+  position: absolute;
+  content: "";
+  background: #0c42ff;
+  left: 48%;
+  top: 0;
+  right: 48%;
+  bottom: 0;
+  z-index: -1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in, opacity 0.4s ease-out;
+  -o-transition: all 0.3s ease-in, opacity 0.4s ease-out;
+  -webkit-transition: all 0.3s ease-in, opacity 0.4s ease-out;
+  transition: all 0.3s ease-in, opacity 0.4s ease-out;
+}
+/* line 33, ../src/scss/utilities/_buttons.scss */
+.lookbook-container .lookbook__item__details .btn:hover {
+  color: #fff;
+}
+/* line 35, ../src/scss/utilities/_buttons.scss */
+.lookbook-container .lookbook__item__details .btn:hover:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 25, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .lookbook-container .lookbook__item__details .btn {
+    width: 100%;
+  }
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 19, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .lookbook-container .lookbook__item__details {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex: 100%;
+    flex: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* line 11, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item:first-child {
+  margin-top: 30px;
+}
+/* line 15, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item:nth-child(even) .lookbook__item__image {
+  order: 2;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 15, ../src/scss/layout/_page-layouts/_lookbook.scss */
+  .lookbook-container .lookbook__item:nth-child(even) .lookbook__item__image {
+    order: 0;
+  }
+}
+/* line 21, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item:nth-child(even) .lookbook__item__details {
+  margin-left: 0;
+  margin-right: 30px;
+}
+/* line 26, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item__details {
+  padding-top: 20px;
+}
+/* line 29, ../src/scss/layout/_page-layouts/_lookbook.scss */
+.lookbook-container .lookbook__item__details .title {
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a0a0a0;
+  font-size: 0.85714em;
+  line-height: 1.83333em;
+  padding-top: 1px;
+  /* Allows for hr margin to start at top of h2 */
+}
+/* line 6, ../src/scss/utilities/_behind-line.scss */
+.lookbook-container .lookbook__item__details .title:after {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 9, ../src/scss/utilities/_behind-line.scss */
+.lookbook-container .lookbook__item__details .title span {
+  padding-right: 10px;
+  float: left;
+}
+/* line 13, ../src/scss/utilities/_behind-line.scss */
+.lookbook-container .lookbook__item__details .title hr {
+  border: 1px solid #DDD;
+  border-width: 1px 0 0 0;
+  margin-top: 11px;
 }
 
 /*# sourceMappingURL=application.css.map */
