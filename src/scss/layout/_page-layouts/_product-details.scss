@@ -1,0 +1,48 @@
+.product-container {
+  padding-bottom: 45px;
+  .hero-heading {
+    @include hero-headings(35px);
+    text-align: center;
+  }
+
+  .product-detail__item {
+    padding-top: 50px;
+    @include product-info-item(fill, $primary-action, product-detail);
+    margin-top: 60px;
+    &:first-child {
+      margin-top: 30px;
+    }
+    &__image {
+      .product-note {
+        &__col {
+          @include adjust-font-size-to(12px);
+          display: inline-block;
+          vertical-align: top;
+          width: 48%;
+          padding: {
+            left: 35px;
+            right: 10px;
+          };
+          &:first-child {
+            padding-left: 0;
+          }
+
+          h3 {
+            @include padding-leader();
+          }
+        }
+      }
+    }
+    &__details {
+      padding-top: 20px;
+      .btn {
+        width: 100%;
+      }
+      .title {
+        margin: 15px 0;
+        @include section-title-mix;
+        @include behind-line();
+      }
+    }
+  }
+}

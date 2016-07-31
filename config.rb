@@ -3,7 +3,7 @@ require 'compass/import-once/activate'
 require 'susy'
 
 # Set this to the root of your project when deployed:
-http_path = "E:/My-Workspace/loomah"
+http_path = "C:/Users/chanaka/WebstormProjects/loomah"
 css_dir = "css"
 sass_dir = "src/scss"
 images_dir = "images"

@@ -392,6 +392,17 @@ p {
 }
 
 /* line 24, ../src/scss/layout/_typography.scss */
+ul {
+  padding-left: 35px;
+  list-style: disc;
+  padding-top: 1.57143em;
+}
+/* line 29, ../src/scss/layout/_typography.scss */
+ul li {
+  padding-left: 8px;
+}
+
+/* line 34, ../src/scss/layout/_typography.scss */
 a {
   text-decoration: none;
   color: inherit;
@@ -430,7 +441,7 @@ a {
   overflow: hidden;
   margin-top: 60px;
 }
-/* line 5, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+/* line 6, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
 .lookbook-container .lookbook__item__image {
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -441,12 +452,12 @@ a {
   -webkit-flex: 2 55%;
   flex: 2 55%;
 }
-/* line 7, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+/* line 15, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
 .lookbook-container .lookbook__item__image img {
   max-width: 100%;
 }
-@media (min-width: 24.063em) and (max-width: 64.063em) {
-  /* line 5, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+@media (min-width: 24.063em) and (max-width: 40.063em) {
+  /* line 6, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
   .lookbook-container .lookbook__item__image {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -460,7 +471,7 @@ a {
     padding-right: 25px;
   }
 }
-/* line 19, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+/* line 29, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
 .lookbook-container .lookbook__item__details {
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -472,12 +483,12 @@ a {
   flex: 2 42%;
   margin-left: 30px;
 }
-/* line 22, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+/* line 38, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
 .lookbook-container .lookbook__item__details h2 {
   font-size: 1.78571em;
   line-height: 1.056em;
 }
-/* line 25, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+/* line 41, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
 .lookbook-container .lookbook__item__details .btn {
   margin-top: 30px;
   font-family: "Montserrat", sans-serif;
@@ -529,13 +540,13 @@ a {
   right: 0;
 }
 @media (min-width: 24.063em) and (max-width: 64.063em) {
-  /* line 25, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  /* line 41, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
   .lookbook-container .lookbook__item__details .btn {
     width: 100%;
   }
 }
-@media (min-width: 24.063em) and (max-width: 64.063em) {
-  /* line 19, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+@media (min-width: 24.063em) and (max-width: 40.063em) {
+  /* line 29, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
   .lookbook-container .lookbook__item__details {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -597,6 +608,191 @@ a {
 }
 /* line 13, ../src/scss/utilities/_behind-line.scss */
 .lookbook-container .lookbook__item__details .title hr {
+  border: 1px solid #DDD;
+  border-width: 1px 0 0 0;
+  margin-top: 11px;
+}
+
+/* line 1, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container {
+  padding-bottom: 45px;
+}
+/* line 3, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .hero-heading {
+  width: 55%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 3, ../src/scss/layout/_page-layouts/_product-details.scss */
+  .product-container .hero-heading {
+    width: 100%;
+    padding: 0 35px;
+  }
+}
+/* line 8, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item {
+  padding-top: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  margin-top: 60px;
+}
+/* line 6, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.product-container .product-detail__item__image {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 2 65%;
+  flex: 2 65%;
+}
+/* line 9, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.product-container .product-detail__item__image img {
+  max-width: 100%;
+}
+@media (min-width: 24.063em) and (max-width: 40.063em) {
+  /* line 6, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .product-container .product-detail__item__image {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex: 100%;
+    flex: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* line 29, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.product-container .product-detail__item__details {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 2 32%;
+  flex: 2 32%;
+  margin-left: 30px;
+}
+/* line 38, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.product-container .product-detail__item__details h2 {
+  font-size: 1.78571em;
+  line-height: 1.056em;
+}
+/* line 41, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+.product-container .product-detail__item__details .btn {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #0c42ff;
+  border: none;
+  color: #fff;
+}
+@media (min-width: 24.063em) and (max-width: 64.063em) {
+  /* line 41, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .product-container .product-detail__item__details .btn {
+    width: 100%;
+  }
+}
+@media (min-width: 24.063em) and (max-width: 40.063em) {
+  /* line 29, ../src/scss/modules/_lookbook-modules/_lookbook-item.scss */
+  .product-container .product-detail__item__details {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex: 100%;
+    flex: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* line 12, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item:first-child {
+  margin-top: 30px;
+}
+/* line 17, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__image .product-note__col {
+  font-size: 0.85714em;
+  line-height: 1.83333em;
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  padding-left: 35px;
+  padding-right: 10px;
+}
+/* line 26, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__image .product-note__col:first-child {
+  padding-left: 0;
+}
+/* line 30, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__image .product-note__col h3 {
+  padding-top: 1.57143em;
+}
+/* line 36, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__details {
+  padding-top: 20px;
+}
+/* line 38, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__details .btn {
+  width: 100%;
+}
+/* line 41, ../src/scss/layout/_page-layouts/_product-details.scss */
+.product-container .product-detail__item__details .title {
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a0a0a0;
+  font-size: 0.85714em;
+  line-height: 1.83333em;
+  padding-top: 1px;
+  /* Allows for hr margin to start at top of h2 */
+}
+/* line 6, ../src/scss/utilities/_behind-line.scss */
+.product-container .product-detail__item__details .title:after {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 9, ../src/scss/utilities/_behind-line.scss */
+.product-container .product-detail__item__details .title span {
+  padding-right: 10px;
+  float: left;
+}
+/* line 13, ../src/scss/utilities/_behind-line.scss */
+.product-container .product-detail__item__details .title hr {
   border: 1px solid #DDD;
   border-width: 1px 0 0 0;
   margin-top: 11px;
