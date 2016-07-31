@@ -17,7 +17,7 @@
     }
   }
   &__details {
-    @include flex-box-item(2 45%);
+    @include flex-box-item(2 42%);
     margin-left: 30px;
     h2 {
       @include adjust-font-size-to(25px, 1.2);
